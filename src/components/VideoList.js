@@ -3,7 +3,7 @@ import VideoItem from './VideoItem';
 
 const VideoList = (props) =>{
     const renderedList = props.videos.map((video) => {
-        return <VideoItem onVideoSelect={props.onVideoSelect} video = {
+        return <VideoItem addToWatchList={props.addToWatchList} onVideoSelect={props.onVideoSelect} video = {
             video
         }
         />;
